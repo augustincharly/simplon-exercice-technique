@@ -24,3 +24,5 @@ utilisés lors du développement.
 
 	Mes difficultés étaient surtout sur la manière de gérer la connexion et des erreurs
 assez subtiles de SQL que j'ai pu éclaircir en me renseignant et en testant sur phpmyadmin.
+
+La mise en place s'est faite sur 3 matinées, à peu près 5 ou 6 heures en tout.
