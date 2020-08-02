@@ -1,0 +1,26 @@
+	Tout d'abord, je crée les entités sous formes de classes python.
+Je prends soin de définir à nul par défaut les propriétés correspondantes
+à des entités qui peuvent être nulles.(ex: un User peut ne pas avoir de Topic)
+
+	Je crée également un fichier .env pour centraliser les informations de connexion
+sous forme de variables d'environnement (pour y accéder facilement, j'installe
+le module python « python-dotenv »)
+
+	Je crée un composant dédié à la connection auquel je ferais appel dans le
+repository.
+
+	Je crée un repository ou composant d'accès à la base de donnée qui executera 
+les requêtes SQL préparées en fonction de l'objet passé en paramètre.
+	J'y crée une fonction de création de user, elle prend un User en paramètre et l'utilise pour
+le créer en base de donnée à l'aide d'une requête INSERT.
+	Une fonction de récupération récupère un user à partir de son id et une fonction de 
+modification mets à jour un user préalablement récupéré et modifié.
+
+	Enfin je crée un script permettant de vérifier le bon fonctionnement du user_repository 
+et du Model.
+
+	Je me suis servi de stack-overflow, le site de la w3school et la documentation des modules
+utilisés lors du développement.
+
+	Mes difficultés étaient surtout sur la manière de gérer la connexion et des erreurs
+assez subtiles de SQL que j'ai pu éclaircir en me renseignant et en testant sur phpmyadmin.
